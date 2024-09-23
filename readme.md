@@ -4,7 +4,9 @@ Convert files in .png and .jpg format to PDF with a simple python script
 
 ## Prerequisites
 Prior running the script, the Pillow library must be installed. 
+
 To install on Windows, run: pip install pillow
+
 To install on Linux(Debian), run: sudo apt-get install python3-pil
 
 ##  Code analysis:

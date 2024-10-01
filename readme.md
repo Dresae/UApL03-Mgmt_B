@@ -15,7 +15,7 @@ Firstly we import the "image" module from PIL library (Python Imaging Library), 
 
 The module "pdfgen" is imported from "reportlab" library that allows us to generate PDF documents. also the "canvas" module was imported from "pdfgen", which facilitate us to create PDF pages and add content.
 
-### Defining the Function###  
+### Defining the Function
 The two arguments: 'png_file' and 'pdf_file' in the 'png_to_pdf' function establish the path for both, the source and the output.
 
 1.The function uses the **'image'** module to open the input PNG file.

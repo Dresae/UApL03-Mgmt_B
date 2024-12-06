@@ -76,3 +76,33 @@ def show_summary_chart():
     plt.xticks(rotation=45)
     plt.tight_layout()
     plt.show()
+
+# GUI setup
+def submit():
+    id_number = id_number_entry.get()
+    name = name_entry.get()
+    tel = tel_entry.get()
+    address = address_entry.get()
+    email = email_entry.get()
+    insert_user(id_number, name, tel, address, email) 
+    clear_entries()
+ 
+def search():
+    name = search_entry.get()
+    user = search_user(name)
+    if user:
+        messagebox.showinfo("User Found", f"id_number: {user[1]}, Name: {user[2]}, Tel: {user[3]}, Address: {user[4]}, Email: {user[5]}")
+    else:
+        messagebox.showwarning("Not Found", "User not found.")
+
+def show_summary():
+    count = count_users()
+    messagebox.showinfo("User Summary", f"Total registered users: {count}")
+
+def clear_entries():
+    id_number_entry.delete(0, tk.END)
+    name_entry.delete(0, tk.END)
+    tel_entry.delete(0, tk.END)
+    address_entry.delete(0, tk.END)
+    email_entry.delete(0, tk.END)
+    search_entry.delete(0, tk.END)

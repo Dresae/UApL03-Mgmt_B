@@ -119,7 +119,7 @@ tk.Label(app, text="ID Number").grid(row=0, column=0)
 id_number_entry = tk.Entry(app)
 id_number_entry.grid(row=0, column=1)
 
-tk.Label(app, text="Name").grid(row=1, column=0)
+tk.Label(app, text="Name").grid(row=1, column=0)    
 name_entry = tk.Entry(app)
 name_entry.grid(row=1, column=1)
 
@@ -136,3 +136,16 @@ email_entry = tk.Entry(app)
 email_entry.grid(row=4, column=1)
 
 tk.Button(app, text="Submit", command=submit).grid(row=5, columnspan=2)
+
+# Search User
+tk.Label(app, text="Search User").grid(row=6, column=0)
+search_entry = tk.Entry(app)
+search_entry.grid(row=6, column=1)
+
+tk.Button(app, text="Search", command=search).grid(row=7, columnspan=2)
+
+# Summary
+tk.Button(app, text="Show Summary", command=show_summary).grid(row=8, columnspan=2)
+tk.Button(app, text="Show Chart", command=show_summary_chart).grid(row=9, columnspan=2)
+
+app.mainloop()

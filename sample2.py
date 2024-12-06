@@ -106,3 +106,33 @@ def clear_entries():
     address_entry.delete(0, tk.END)
     email_entry.delete(0, tk.END)
     search_entry.delete(0, tk.END)
+
+
+# Main application
+setup_database()
+
+app = tk.Tk()
+app.title("User Registration")
+
+# Registration Form
+tk.Label(app, text="ID Number").grid(row=0, column=0)
+id_number_entry = tk.Entry(app)
+id_number_entry.grid(row=0, column=1)
+
+tk.Label(app, text="Name").grid(row=1, column=0)
+name_entry = tk.Entry(app)
+name_entry.grid(row=1, column=1)
+
+tk.Label(app, text="Telephone").grid(row=2, column=0)
+tel_entry = tk.Entry(app)
+tel_entry.grid(row=2, column=1)
+
+tk.Label(app, text="Address").grid(row=3, column=0)
+address_entry = tk.Entry(app)
+address_entry.grid(row=3, column=1)
+
+tk.Label(app, text="Email").grid(row=4, column=0)
+email_entry = tk.Entry(app)
+email_entry.grid(row=4, column=1)
+
+tk.Button(app, text="Submit", command=submit).grid(row=5, columnspan=2)

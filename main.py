@@ -14,3 +14,11 @@ y = (screen_height/2) - (height/2)
 root.geometry("%dx%d+%d+%d" % (width, height, x, y))
 root.resizable(0, 0)
 root.config(bg="#6666ff")
+
+#============================VARIABLES===================================
+FIRSTNAME = StringVar()
+LASTNAME = StringVar()
+GENDER = StringVar()
+AGE = StringVar()
+ADDRESS = StringVar()
+CONTACT = StringVar()
